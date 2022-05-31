@@ -1,1 +1,1 @@
-# Tkinter-Calculadora-Senac
+# Tkinter-Senac
