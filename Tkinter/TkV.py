@@ -2,6 +2,10 @@ from tkinter import *
 
 janela = Tk()
 
+fr1 = Frame(janela,bg='#add8e6')
+fr2 = Frame(janela,bg='#add8e6')
+fr3 = Frame(janela,bg='#add8e6')
+
 janela.config(background="#add8e6")
 janela.grid_rowconfigure(0,weight=1)
 janela.grid_rowconfigure(1,weight=1)
@@ -28,23 +32,16 @@ Conv = Button(janela,text='Converter',font='Arial 16',command=converter)
 engual = Label(janela,text='=',font='Arial 20',background='#add8e6')
 sair = Button(janela,text='Sair',font='Arial 20',command=quit)
 
+fr1.grid()
+fr2.grid(sticky=NSEW)
+fr3.grid()
 temp.grid(row=0,column=1)
-cel.grid(row=1,column=0)
-Gcel.grid(row=2,column=0)
-engual.grid(row=1,column=1)
-Rfah.grid(row=1,column=2)
-Gfah.grid(row=2,column=2)
-sair.grid(row=4,column=1)
-Conv.grid(row=2,column=1)
+cel.grid(row=0,column=0)
+Gcel.grid(row=1,column=0)
+engual.grid(row=0,column=1)
+Rfah.grid(row=0,column=2)
+Gfah.grid(row=1,column=2)
+sair.grid(row=0,column=1)
+Conv.grid(row=1,column=1)
 
 janela.mainloop()
-
-
-
-
-
-
-
-c * 1.8 + 32
-
-
